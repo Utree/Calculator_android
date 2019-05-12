@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <!-- 0行目 -->
+    <TableRow android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textAlignment="viewEnd"
+            android:textColor="#fff"
+            android:textSize="60sp" />
+    </TableRow>
+
+    <!-- 1行目 -->
+    <TableRow android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/ac_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_rounded_corners"
+            android:padding="0dp"
+            android:text="AC"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:onClick="clearAllButtonPushed"/>
+
+        <Button
+            android:id="@+id/plus_minus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_rounded_corners"
+            android:text="+/-"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:onClick="plusMinusButtonPushed"/>
+
+        <Button
+            android:id="@+id/percent_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_rounded_corners"
+            android:text="%"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:onClick="calculateButtonPushed"/>
+
+        <Button
+            android:id="@+id/divide_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_rounded_corners_calc"
+            android:text="÷"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:onClick="calculateButtonPushed" />
+    </TableRow>
+
+    <!-- 2行目 -->
+    <TableRow
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/seven_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/eight_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/nine_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/multiply_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:background="@drawable/shape_rounded_corners_calc"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="calculateButtonPushed"/>
+    </TableRow>
+
+    <!-- 3行目 -->
+    <TableRow
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/four_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/five_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/six_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/minus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:background="@drawable/shape_rounded_corners_calc"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="calculateButtonPushed"/>
+    </TableRow>
+
+    <!-- 4行目 -->
+    <TableRow
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/one_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/two_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/three_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="numberButtonPushed"/>
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:background="@drawable/shape_rounded_corners_calc"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="calculateButtonPushed"/>
+    </TableRow>
+
+    <!-- 5行目 -->
+    <TableRow
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/zero_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_span="2"
+            android:background="@drawable/shape_rounded_corners"
+            android:onClick="numberButtonPushed"
+            android:paddingLeft="30dp"
+            android:text="0"
+            android:textAlignment="viewStart"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/point_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:background="@drawable/shape_rounded_corners"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="pointButtonPushed"/>
+
+        <Button
+            android:id="@+id/equal_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:background="@drawable/shape_rounded_corners_calc"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_margin="3dp"
+            android:onClick="calculateButtonPushed"/>
+    </TableRow>
+
+</TableLayout>

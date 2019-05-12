@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- shape:oval(=楕円形) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#f4a54a" />
+    <corners android:radius="100dp" />
+    <size
+        android:width="20dp"
+        android:height="80dp"></size>
+
+</shape>
